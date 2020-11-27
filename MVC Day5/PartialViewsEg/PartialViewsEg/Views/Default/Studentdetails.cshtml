@@ -1,0 +1,30 @@
+﻿@model IEnumerable<PartialViewsEg.Models.Student> 
+    @using PartialViewsEg.Models;
+@{
+    ViewBag.Title = "Studentdetails";
+}
+
+<h2>Studentdetails</h2>
+
+@if(Model!=null)
+{
+<div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+            <th>Stream</th>
+        </tr>
+        
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Marks</td>
+                    <td>@item.Stream</td>
+                </tr>
+            }
+       
+    </table>
+</div>
+}

@@ -1,0 +1,11 @@
+﻿@model PartialViewsEg.Models.Student
+@{
+    ViewBag.Title = "MumbaiIndex";
+}
+
+<h2>Mumbai List of Students</h2>
+
+<div>
+    @Html.Partial("studentdetails",Model.st)
+</div>
+
