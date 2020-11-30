@@ -22,7 +22,9 @@ namespace WebApiEF
             GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling
                 = Newtonsoft.Json.ReferenceLoopHandling.Serialize;
 
+            config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
 
+           // config.Formatters.JsonFormatter.SerializerSettings.ContractResolver=new camelcaseproperty
             //can specify either the below Json.add or remove(xml)
             // config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
             config.Formatters.Remove(config.Formatters.XmlFormatter);

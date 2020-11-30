@@ -1,0 +1,21 @@
+<p>employee works!</p>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Gender</th>
+        <th>Department Id</th>
+        
+    </tr>
+
+    <tr *ngFor="let emp of empdetails">
+      <td>{{emp.ID}}</td>
+      <td>{{emp.Name}}</td>
+      <td>{{emp.Salary}}</td>
+      <td>{{emp.Gender}}</td>
+      <td>{{emp.Departmentid}}</td>
+      
+    </tr>
+</table>
+

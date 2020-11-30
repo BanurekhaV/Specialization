@@ -1,0 +1,26 @@
+1. create an MVC application
+2. Right click on the project name in the solution explorer
+and add a ADODataEntityModel
+3.The default model name will be Model1. If you want you can change the name, else click ok
+4.You have to select EF model designer(2nd option)
+5. You will be taken to an empty designer page
+6. Right Click and select Add New Entity
+7. Type your Entity Name (eg:car)
+8. Observe that an id column get created automatically of type int32.
+9. Right click and select scalr property to add other columns
+10.Somewhere within the EDMX page right click and select updata database from model option
+11. You will be taken to  wizard, to specify the connection details.
+12. Select new connection. Specify the server name and authentication.
+13. In the Textbox/dropdown(select a database) type the name of your database that you want to create.
+14. Click Ok when an warning that no database/or no permission dialig box is displayed.
+15.Check for the Script file that gets generated as(.Sql). Click Finish button
+16.You will see the same script file generated in your application.
+17. Right click and press execute option
+18. It will prompt for the location where the script file has to be executed.(Give relevant details of the DB server, and authentication)
+19. Check for the command successfully executed in the response window.
+20. Go to the database, refresh and see that the new databse with one table getting created.
+21. Add 2 or 3 records.
+
+
+
+
