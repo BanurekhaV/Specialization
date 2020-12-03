@@ -12,6 +12,9 @@ namespace FirstWebApi
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+           
+            var xml = GlobalConfiguration.Configuration.Formatters.XmlFormatter;
+            xml.UseXmlSerializer = true;
         }
     }
 }
