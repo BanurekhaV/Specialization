@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers"
   ],
-  "SelectedNode": "\\Global.asax.cs",
+  "SelectedNode": "\\Global.asax",
   "PreviewInSolutionExplorer": false
 }
